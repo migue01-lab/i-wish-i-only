@@ -3,230 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expressing Wishes and Regrets</title>
+    <title>Discourse on Counterfactual States and Ontological Optimization</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Poppins', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap');
+        .font-serif-heading { font-family: 'Cinzel', serif; }
+        body { font-family: 'Inter', sans-serif; }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased">
 
-    <header class="bg-indigo-900 border-b border-indigo-700 py-6 px-4 shadow-lg">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+    <header class="bg-slate-900 border-b border-slate-800 py-6 px-4 sm:px-8 shadow-2xl">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
-                <span class="bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">B1 Level Lesson</span>
-                <h1 class="text-2xl sm:text-3xl font-bold mt-1 text-white">Wishes & Regrets</h1>
-                <p class="text-indigo-200 text-sm">Expressing emotions using <i>I wish</i> and <i>If only</i></p>
+                <span class="bg-emerald-950 border border-emerald-800 text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest">Advanced Pedagogical Framework</span>
+                <h1 class="text-2xl sm:text-3xl font-bold mt-2 text-slate-100 font-serif-heading tracking-tight">Counterfactual Discursivity</h1>
+                <p class="text-slate-400 text-sm mt-1">Articulating divergence from empirical actuality via elevated subjunctive modalities</p>
             </div>
-            <div class="flex gap-2 bg-slate-900/50 p-1.5 rounded-xl border border-indigo-700/50">
-                <button onclick="switchTab('scene')" id="btn-scene" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition bg-indigo-600 text-white shadow-md">1. Scene</button>
-                <button onclick="switchTab('practice')" id="btn-practice" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition text-slate-400 hover:text-white">2. Practice</button>
-                <button onclick="switchTab('express')" id="btn-express" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition text-slate-400 hover:text-white">3. Express</button>
-                <button onclick="switchTab('share')" id="btn-share" class="tab-btn px-4 py-2 text-sm font-medium rounded-lg transition text-slate-400 hover:text-white">4. Share</button>
-            </div>
+            <nav class="flex flex-wrap gap-2 bg-slate-950/80 p-1.5 rounded-xl border border-slate-800 shadow-inner">
+                <button onclick="switchTab('phase-1')" id="btn-phase-1" class="tab-btn px-4 py-2 text-xs font-semibold rounded-lg transition uppercase tracking-wider bg-slate-800 text-emerald-400 border border-slate-700 shadow-md">I. Divergence</button>
+                <button onclick="switchTab('phase-2')" id="btn-phase-2" class="tab-btn px-4 py-2 text-xs font-semibold rounded-lg transition uppercase tracking-wider text-slate-400 hover:text-slate-200">II. Syntactics</button>
+                <button onclick="switchTab('phase-3')" id="btn-phase-3" class="tab-btn px-4 py-2 text-xs font-semibold rounded-lg transition uppercase tracking-wider text-slate-400 hover:text-slate-200">III. Articulation</button>
+                <button onclick="switchTab('phase-4')" id="btn-phase-4" class="tab-btn px-4 py-2 text-xs font-semibold rounded-lg transition uppercase tracking-wider text-slate-400 hover:text-slate-200">IV. Dialectic</button>
+            </nav>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto p-4 sm:p-6 flex-grow w-full">
+    <main class="max-w-5xl mx-auto p-4 sm:p-8 flex-grow w-full">
 
-        <!-- Phase 1: Scene -->
-        <section id="scene" class="tab-content active space-y-6 animate-in fade-in duration-500">
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <!-- Phase 1: Paradigmatic Divergence -->
+        <section id="phase-1" class="tab-content active space-y-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-xl">1</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-700/60 text-emerald-400 flex items-center justify-center font-bold text-lg font-serif-heading">I</div>
                     <div>
-                        <h2 class="text-xl font-semibold text-white">Meet Sofia</h2>
-                        <p class="text-slate-400 text-sm">Understanding emotions and hidden desires</p>
-                    </div>
-                </div>
-                
-                <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed mb-6">
-                    <p class="mb-4">Sofia recently moved to a bustling, noisy city for university. Leaving her close-knit family and quiet hometown behind was harder than she expected. Everything feels fast-paced and overwhelming. Looking out her apartment window at the glittering skyline, a wave of homesickness washes over her.</p>
-                    
-                    <div class="bg-slate-900/60 border-l-4 border-pink-500 p-4 rounded-r-xl my-6">
-                        <p class="text-lg text-white italic font-medium">"I wish I had my family with me right now."</p>
+                        <h2 class="text-xl font-bold text-slate-100 font-serif-heading tracking-wide">Ontological Divergence & Existential Optimization</h2>
+                        <p class="text-slate-400 text-xs tracking-wider uppercase">Deconstructing circumstantial friction and aspirational transcendence</p>
                     </div>
                 </div>
 
-                <div class="bg-slate-900/50 rounded-xl p-6 border border-slate-700/50">
-                    <h3 class="text-lg font-semibold text-white mb-4">Reflect on Sofia's Emotions</h3>
-                    <div class="space-y-4 text-slate-400 text-sm">
-                        <p><strong class="text-indigo-400">1. Current Reality:</strong> Is Sofia's family here with her right now?</p>
-                        <p><strong class="text-pink-400">2. The Emotion:</strong> How does Sofia feel about her current situation?</p>
-                        <p><strong class="text-emerald-400">3. The Wish:</strong> What is she imagining?</p>
+                <div class="space-y-4 text-slate-300 leading-relaxed text-sm">
+                    <p>
+                        Human agency perpetually encounters circumstantial limitations—spatial confinement, temporal deficit, or socio-professional friction. In response to these empirical boundaries, individuals experience a conscious divergence between empirical actuality and an optimized existential configuration. This psychological polarity precipitates counterfactual longing: the cognitive imperative to recalibrate suboptimal realities through linguistic abstraction.
+                    </p>
+
+                    <div class="bg-slate-950/80 border-l-4 border-emerald-500 p-5 rounded-r-xl my-6">
+                        <p class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-1">Empirical Dilemma & Manifest Aspiration</p>
+                        <p class="text-base text-slate-200 italic font-serif leading-relaxed">
+                            "Subject to relentless urban saturation and profound geographic alienation from essential kin, the protagonist observes: <br>
+                            <span class="text-emerald-300 font-semibold not-italic">‘I wish my geographical milieu afforded immediate communion with my foundational lineage.’</span>"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/40 rounded-xl p-6 border border-slate-800 space-y-4 mt-6">
+                    <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-200 font-serif-heading">Analytical Hermeneutics</h3>
+                    <div class="grid sm:grid-cols-3 gap-4 text-xs">
+                        <div class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+                            <span class="text-emerald-400 font-semibold uppercase tracking-wide block mb-1">Empirical Reality</span>
+                            Geographic isolation and structural constraint within an overwhelming urban architecture.
+                        </div>
+                        <div class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+                            <span class="text-amber-400 font-semibold uppercase tracking-wide block mb-1">Psychological Friction</span>
+                            Acute perception of deficit, alienation, and existential dissonance against current circumstance.
+                        </div>
+                        <div class="bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+                            <span class="text-sky-400 font-semibold uppercase tracking-wide block mb-1">Optimized Counterfactual</span>
+                            Conceptualization of an idealized state predicated on kin adjacency and emotional equilibrium.
+                        </div>
                     </div>
                 </div>
 
                 <div class="mt-8 flex justify-end">
-                    <button onclick="switchTab('practice')" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2.5 rounded-xl font-medium transition flex items-center gap-2 shadow-lg shadow-indigo-900/20">
-                        Next: Practice &rarr;
-                    </button>
+                    <button onclick="switchTab('phase-2')" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold px-6 py-2.5 rounded-lg text-xs uppercase tracking-widest transition shadow-lg">Proceed to Syntactic Framework &rarr;</button>
                 </div>
             </div>
         </section>
 
-        <!-- Phase 2: Practice -->
-        <section id="practice" class="tab-content space-y-6 animate-in fade-in duration-500">
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <!-- Phase 2: Structural Syntactics -->
+        <section id="phase-2" class="tab-content space-y-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xl">2</div>
+                    <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 flex items-center justify-center font-bold text-lg font-serif-heading">II</div>
                     <div>
-                        <h2 class="text-xl font-semibold text-white">I Wish vs. If Only</h2>
-                        <p class="text-slate-400 text-sm">Practice structures for desires and regrets</p>
+                        <h2 class="text-xl font-bold text-slate-100 font-serif-heading tracking-wide">Syntactic Architecture of Subjunctive Modalities</h2>
+                        <p class="text-slate-400 text-xs tracking-wider uppercase">Delineating present aspirations versus retrospective counterfactuals</p>
                     </div>
                 </div>
 
-                <div class="bg-indigo-900/20 border border-indigo-700/50 rounded-xl p-6 mb-8 text-indigo-100 text-sm space-y-4">
-                    <p><strong class="text-white block mb-1">To express a desire for a different reality now:</strong> Use <strong>I wish / If only + simple past</strong>.</p>
-                    <p><strong class="text-white block mb-1">To express a regret about the past:</strong> Use <strong>I wish / If only + past perfect <i>(had + past participle)</i></strong>.</p>
+                <div class="grid md:grid-cols-2 gap-4 text-xs leading-relaxed mb-6">
+                    <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-5">
+                        <span class="text-emerald-400 font-bold uppercase tracking-widest block mb-2 font-serif-heading">Present Aspiration Paradigm</span>
+                        <p class="text-slate-300 mb-3">Employed when conceptualizing the hypothetical optimization of contemporaneous existential parameters.</p>
+                        <code class="block bg-slate-900 p-2.5 rounded border border-slate-800 text-emerald-300 font-mono">
+                            [Subject] + wish / If only + [Subject] + Past Simple
+                        </code>
+                    </div>
+                    <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-5">
+                        <span class="text-amber-400 font-bold uppercase tracking-widest block mb-2 font-serif-heading">Historical Retrospection Paradigm</span>
+                        <p class="text-slate-300 mb-3">Employed when articulating immutable counterfactuals and remorse regarding antecedent events.</p>
+                        <code class="block bg-slate-900 p-2.5 rounded border border-slate-800 text-amber-300 font-mono">
+                            [Subject] + wish / If only + [Subject] + Past Perfect
+                        </code>
+                    </div>
                 </div>
 
-                <div class="space-y-6">
-                    <!-- Q1 -->
-                    <div class="bg-slate-900/80 border border-slate-700 p-6 rounded-2xl">
-                        <p class="font-medium text-slate-100 mb-4">1. Sofia misses her quiet hometown. She says:</p>
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <button onclick="checkAnswer(1, 'B', this)" class="option-btn-1 text-left p-4 rounded-xl border border-slate-700 bg-slate-800 hover:border-indigo-500 text-sm transition font-medium text-slate-300">A) I wish I live in a quiet town.</button>
-                            <button onclick="checkAnswer(1, 'A', this)" class="option-btn-1 text-left p-4 rounded-xl border border-slate-700 bg-slate-800 hover:border-indigo-500 text-sm transition font-medium text-slate-300">B) If only I lived in a quiet town.</button>
+                <div class="space-y-4">
+                    <div class="bg-slate-950/60 border border-slate-800 p-5 rounded-xl">
+                        <p class="text-xs text-slate-300 font-medium mb-3">1. Articulate contemporaneous spatial dissatisfaction regarding urban density:</p>
+                        <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                            <button onclick="validateCriterion(1, false, this)" class="btn-q1 text-left p-3.5 rounded-lg border border-slate-800 bg-slate-900 hover:border-slate-700 text-slate-300 transition">
+                                A) I wish I occupy a bucolic and undisturbed domicile.
+                            </button>
+                            <button onclick="validateCriterion(1, true, this)" class="btn-q1 text-left p-3.5 rounded-lg border border-slate-800 bg-slate-900 hover:border-slate-700 text-slate-300 transition">
+                                B) If only I occupied an unperturbed bucolic sanctuary.
+                            </button>
                         </div>
-                        <p id="feedback-1" class="text-sm mt-4 hidden font-medium"></p>
+                        <p id="eval-1" class="text-xs mt-3 hidden font-mono"></p>
                     </div>
 
-                    <!-- Q2 -->
-                    <div class="bg-slate-900/80 border border-slate-700 p-6 rounded-2xl">
-                        <p class="font-medium text-slate-100 mb-4">2. Sofia regrets not studying for her exam. She says:</p>
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <button onclick="checkAnswer(2, 'A', this)" class="option-btn-2 text-left p-4 rounded-xl border border-slate-700 bg-slate-800 hover:border-indigo-500 text-sm transition font-medium text-slate-300">A) I wish I had studied harder.</button>
-                            <button onclick="checkAnswer(2, 'B', this)" class="option-btn-2 text-left p-4 rounded-xl border border-slate-700 bg-slate-800 hover:border-indigo-500 text-sm transition font-medium text-slate-300">B) I wish I studied harder.</button>
+                    <div class="bg-slate-950/60 border border-slate-800 p-5 rounded-xl">
+                        <p class="text-xs text-slate-300 font-medium mb-3">2. Articulate retrospective remorse regarding pedagogical unpreparedness:</p>
+                        <div class="grid sm:grid-cols-2 gap-3 text-xs">
+                            <button onclick="validateCriterion(2, true, this)" class="btn-q2 text-left p-3.5 rounded-lg border border-slate-800 bg-slate-900 hover:border-slate-700 text-slate-300 transition">
+                                A) I wish I had cultivated superior scholastic rigor prior to assessment.
+                            </button>
+                            <button onclick="validateCriterion(2, false, this)" class="btn-q2 text-left p-3.5 rounded-lg border border-slate-800 bg-slate-900 hover:border-slate-700 text-slate-300 transition">
+                                B) I wish I cultivated superior scholastic rigor during antecedent trials.
+                            </button>
                         </div>
-                        <p id="feedback-2" class="text-sm mt-4 hidden font-medium"></p>
+                        <p id="eval-2" class="text-xs mt-3 hidden font-mono"></p>
                     </div>
                 </div>
 
                 <div class="mt-8 flex justify-between">
-                    <button onclick="switchTab('scene')" class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2.5 rounded-xl font-medium transition shadow-lg shadow-slate-900/20">&larr; Back</button>
-                    <button onclick="switchTab('express')" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2.5 rounded-xl font-medium transition shadow-lg shadow-indigo-900/20">Next: Express &rarr;</button>
+                    <button onclick="switchTab('phase-1')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-6 py-2.5 rounded-lg text-xs uppercase tracking-widest transition">&larr; Retract</button>
+                    <button onclick="switchTab('phase-3')" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold px-6 py-2.5 rounded-lg text-xs uppercase tracking-widest transition shadow-lg">Proceed to Articulation &rarr;</button>
                 </div>
             </div>
         </section>
 
-        <!-- Phase 3: Express -->
-        <section id="express" class="tab-content space-y-6 animate-in fade-in duration-500">
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <!-- Phase 3: Composition & Articulation -->
+        <section id="phase-3" class="tab-content space-y-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl">3</div>
+                    <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 flex items-center justify-center font-bold text-lg font-serif-heading">III</div>
                     <div>
-                        <h2 class="text-xl font-semibold text-white">Express Your Wishes</h2>
-                        <p class="text-slate-400 text-sm">Write about changes and regrets</p>
+                        <h2 class="text-xl font-bold text-slate-100 font-serif-heading tracking-wide">Formulation of Counterfactual Propositions</h2>
+                        <p class="text-slate-400 text-xs tracking-wider uppercase">Transcribing existential limitations into syntactically precise paradigms</p>
                     </div>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="bg-slate-900/60 border border-slate-700 p-6 rounded-2xl">
-                        <label class="block text-sm font-medium text-slate-100 mb-4">1. Write one thing you wish were different about your daily life right now:</label>
-                        <textarea class="w-full h-24 bg-slate-950 border border-slate-600 rounded-xl p-4 text-slate-200 resize-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition" placeholder="Example: I wish I had more time to relax in the morning."></textarea>
+                <div class="space-y-6 text-xs">
+                    <div class="bg-slate-950/60 border border-slate-800 p-5 rounded-xl">
+                        <label class="block font-semibold text-slate-200 uppercase tracking-wider mb-2">1. Contemporaneous Realization (Present Inadequacy &rarr; Hypothetical Optimization)</label>
+                        <p class="text-slate-400 mb-3">Articulate a divergence regarding a tangible constraint governing your contemporaneous routine or operational capability.</p>
+                        <textarea class="w-full h-24 bg-slate-900 border border-slate-800 rounded-lg p-3 text-slate-200 font-mono text-xs focus:border-emerald-500 focus:outline-none transition resize-none" placeholder="e.g., If only my daily professional obligations permitted substantial intellectual contemplation."></textarea>
                     </div>
 
-                    <div class="bg-slate-900/60 border border-slate-700 p-6 rounded-2xl">
-                        <label class="block text-sm font-medium text-slate-100 mb-4">2. Write one thing you wish you had done differently in the past (a regret):</label>
-                        <textarea class="w-full h-24 bg-slate-950 border border-slate-600 rounded-xl p-4 text-slate-200 resize-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition" placeholder="Example: I wish I had started learning English sooner."></textarea>
+                    <div class="bg-slate-950/60 border border-slate-800 p-5 rounded-xl">
+                        <label class="block font-semibold text-slate-200 uppercase tracking-wider mb-2">2. Antecedent Remorse (Historical Decision &rarr; Counterfactual Idealization)</label>
+                        <p class="text-slate-400 mb-3">Articulate a counterfactual evaluation regarding an antecedent inflection point or omitted enterprise.</p>
+                        <textarea class="w-full h-24 bg-slate-900 border border-slate-800 rounded-lg p-3 text-slate-200 font-mono text-xs focus:border-emerald-500 focus:outline-none transition resize-none" placeholder="e.g., I wish I had dedicated adequate capital to diversified longitudinal assets during initial employment."></textarea>
                     </div>
                 </div>
 
                 <div class="mt-8 flex justify-between">
-                    <button onclick="switchTab('practice')" class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2.5 rounded-xl font-medium transition shadow-lg shadow-slate-900/20">&larr; Back</button>
-                    <button onclick="switchTab('share')" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2.5 rounded-xl font-medium transition shadow-lg shadow-indigo-900/20">Next: Share &rarr;</button>
+                    <button onclick="switchTab('phase-2')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-6 py-2.5 rounded-lg text-xs uppercase tracking-widest transition">&larr; Retract</button>
+                    <button onclick="switchTab('phase-4')" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold px-6 py-2.5 rounded-lg text-xs uppercase tracking-widest transition shadow-lg">Proceed to Dialectic &rarr;</button>
                 </div>
             </div>
         </section>
 
-        <!-- Phase 4: Share -->
-        <section id="share" class="tab-content space-y-6 animate-in fade-in duration-500">
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <!-- Phase 4: Peer Dialectic -->
+        <section id="phase-4" class="tab-content space-y-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <div class="flex items-center gap-4 mb-6">
-                    <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xl">4</div>
+                    <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 flex items-center justify-center font-bold text-lg font-serif-heading">IV</div>
                     <div>
-                        <h2 class="text-xl font-semibold text-white">Share With Your Partner</h2>
-                        <p class="text-slate-400 text-sm">Compare your hopes and regrets</p>
+                        <h2 class="text-xl font-bold text-slate-100 font-serif-heading tracking-wide">Dialectical Interrogation and Exchange</h2>
+                        <p class="text-slate-400 text-xs tracking-wider uppercase">Interlocutory analysis of divergent existential propositions</p>
                     </div>
                 </div>
 
-                <div class="space-y-6 mb-8 text-slate-300">
-                    <p>Now, turn to your partner and share the wishes and regrets you wrote down.</p>
-                    <div class="bg-indigo-900/30 border border-indigo-700/50 rounded-2xl p-6 space-y-4 text-sm font-medium">
-                        <p><span class="text-amber-400">1.</span> Read your sentences out loud.</p>
-                        <p><span class="text-amber-400">2.</span> Ask your partner, "Why do you feel that way?"</p>
-                        <p><span class="text-amber-400">3.</span> Respond using your own wishes!</p>
+                <div class="space-y-4 text-xs text-slate-300 leading-relaxed">
+                    <p>Convene with an academic peer to interrogate your synthesized propositions. Analyze the structural validity and metaphysical basis of their desired ontological shifts.</p>
+                    
+                    <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5 space-y-3 font-mono">
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">Protocol 1:</span>
+                            <span>Declaim individual counterfactual propositions with unwavering phonological and grammatical fidelity.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">Protocol 2:</span>
+                            <span>Execute cross-examination: "What empirical catalyst necessitated this specific counterfactual optimization?"</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-400 font-bold">Protocol 3:</span>
+                            <span>Formulate reciprocal extrapolations employing equivalent subjunctive structures.</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="mt-8 flex justify-start">
-                    <button onclick="switchTab('express')" class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2.5 rounded-xl font-medium transition shadow-lg shadow-slate-900/20">&larr; Back to Express</button>
+                    <button onclick="switchTab('phase-3')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-6 py-2.5 rounded-lg text-xs uppercase tracking-widest transition">&larr; Return to Formulation</button>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-6 text-slate-500 text-xs border-t border-slate-800 mt-auto">
-        Designed for B1 Level ESL Students &bull; Interactive Lesson Tool
+    <footer class="border-t border-slate-900 py-6 text-center text-slate-500 text-[10px] tracking-widest uppercase font-mono">
+        Advanced Applied Linguistics &bull; Subjunctive Counterfactual Modalities &bull; Academic Lexicon Protocol
     </footer>
 
-    <!-- JavaScript Logic -->
     <script>
-        function switchTab(phaseId) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+        function switchTab(targetId) {
+            document.querySelectorAll('.tab-content').forEach(panel => panel.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
-                btn.classList.add('text-slate-400', 'hover:text-white');
+                btn.className = 'tab-btn px-4 py-2 text-xs font-semibold rounded-lg transition uppercase tracking-wider text-slate-400 hover:text-slate-200';
             });
-            
-            document.getElementById(phaseId).classList.add('active');
-            const activeBtn = document.getElementById('btn-' + phaseId);
-            if(activeBtn) {
-                activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
-                activeBtn.classList.remove('text-slate-400', 'hover:text-white');
+
+            document.getElementById(targetId).classList.add('active');
+            const targetBtn = document.getElementById('btn-' + targetId);
+            if (targetBtn) {
+                targetBtn.className = 'tab-btn px-4 py-2 text-xs font-semibold rounded-lg transition uppercase tracking-wider bg-slate-800 text-emerald-400 border border-slate-700 shadow-md';
             }
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function checkAnswer(questionNum, choice, btnElement) {
-            const buttons = document.querySelectorAll('.option-btn-' + questionNum);
-            const feedback = document.getElementById('feedback-' + questionNum);
-            
-            buttons.forEach(b => {
-                b.classList.remove('border-emerald-500', 'bg-emerald-950/40', 'border-rose-500', 'bg-rose-950/40');
-                b.classList.add('border-slate-700', 'bg-slate-800');
+        function validateCriterion(index, isAccurate, trigger) {
+            const group = document.querySelectorAll('.btn-q' + index);
+            const feedbackElem = document.getElementById('eval-' + index);
+
+            group.forEach(btn => {
+                btn.classList.remove('border-emerald-500', 'bg-emerald-950/30', 'border-rose-500', 'bg-rose-950/30');
+                btn.classList.add('border-slate-800', 'bg-slate-900');
             });
 
-            feedback.classList.remove('hidden');
+            feedbackElem.classList.remove('hidden');
 
-            if (questionNum === 1) {
-                if (choice === 'A') {
-                    btnElement.classList.add('border-emerald-500', 'bg-emerald-950/40');
-                    feedback.textContent = '✅ Correct! The simple past ("lived") is used for a present wish.';
-                    feedback.className = 'text-sm mt-4 text-emerald-400 font-medium';
-                } else {
-                    btnElement.classList.add('border-rose-500', 'bg-rose-950/40');
-                    feedback.textContent = '❌ Incorrect. We need the simple past, not present tense or simple past alone.';
-                    feedback.className = 'text-sm mt-4 text-rose-400 font-medium';
-                }
-            } else if (questionNum === 2) {
-                if (choice === 'A') {
-                    btnElement.classList.add('border-emerald-500', 'bg-emerald-950/40');
-                    feedback.textContent = '✅ Correct! Past perfect ("had studied") is for regrets about the past.';
-                    feedback.className = 'text-sm mt-4 text-emerald-400 font-medium';
-                } else {
-                    btnElement.classList.add('border-rose-500', 'bg-rose-950/40');
-                    feedback.textContent = '❌ Incorrect. This structure doesn\'t refer to a past event correctly.';
-                    feedback.className = 'text-sm mt-4 text-rose-400 font-medium';
-                }
+            if (isAccurate) {
+                trigger.classList.add('border-emerald-500', 'bg-emerald-950/30');
+                feedbackElem.textContent = 'STATUS: VALIDATED. Morphosyntactic parameters strictly adhere to counterfactual requirements.';
+                feedbackElem.className = 'text-xs mt-3 text-emerald-400 font-mono';
+            } else {
+                trigger.classList.add('border-rose-500', 'bg-rose-950/30');
+                feedbackElem.textContent = 'STATUS: INVALID. Violation of temporal backshifting constraints under hypothetical modality.';
+                feedbackElem.className = 'text-xs mt-3 text-rose-400 font-mono';
             }
         }
     </script>
 </body>
-                      </html>
-                      
+                            </html>
+                            
